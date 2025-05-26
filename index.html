@@ -1,14 +1,55 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Riya Gupta | Data Analyst</title>
+  <title>Parag Dawani</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hi, I'm Riya Gupta 👋</h1>
-  <p>Welcome to my portfolio site. I'm a data analyst passionate about business analytics, AI, and big data projects.</p>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><button class="tab-button" data-tab="home">Home</button></li>
+        <li><button class="tab-button" data-tab="experience">Experience</button></li>
+        <li><button class="tab-button" data-tab="research">Research Interests</button></li>
+        <li><button class="tab-button" data-tab="contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="tab-content active">
+      <h2>Home</h2>
+      <p>Welcome to Parag Dawani's professional profile.</p>
+    </section>
+
+    <section id="experience" class="tab-content">
+      <h2>Experience</h2>
+      <p>Details to be added.</p>
+    </section>
+
+    <section id="research" class="tab-content">
+      <h2>Research Interests</h2>
+      <p>Details to be added.</p>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <p>Details to be added.</p>
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        contents.forEach(c => c.classList.remove('active'));
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
