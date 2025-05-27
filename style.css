@@ -108,3 +108,17 @@ h2 {
   line-height: 1.6;
   list-style-type: square;
 }
+#contact ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+#contact a {
+  color: #003366;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
