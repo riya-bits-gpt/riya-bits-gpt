@@ -102,3 +102,9 @@ h2 {
 #home ul li {
   margin-bottom: 0.5rem;
 }
+
+#research ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  list-style-type: square;
+}
