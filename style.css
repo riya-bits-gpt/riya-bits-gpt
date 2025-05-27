@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
 .tab-button:hover {
@@ -37,9 +39,17 @@ header {
 main {
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
-  background: #fff;
+  padding: 30px;
+  background: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 .tab-content {
@@ -48,4 +58,47 @@ main {
 
 .tab-content.active {
   display: block;
+}
+
+.experience-entry {
+  background-color: #f9f9f9;
+  border-left: 4px solid #4caf50;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.experience-entry h3 {
+  margin: 0 0 0.5rem;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.experience-entry p {
+  margin: 0.25rem 0 0.75rem;
+  font-style: italic;
+  color: #555;
+}
+
+.experience-entry ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.experience-entry ul li {
+  margin-bottom: 0.5rem;
+}
+
+#home p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#home ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+#home ul li {
+  margin-bottom: 0.5rem;
 }
